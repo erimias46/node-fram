@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%productname%} </title>
+    <script src="https://use.fontawesome.com/3438395c3e.js"></script>
+<style>
+
+    button{
+        color: greenyellow;
+        padding: 10px;
+        background-color: #96DED1;
+        outline: none;
+        border: none;
+    }
+    a{
+        color: #15A689;
+    }
+    .organic{
+        display: none;
+    }
+    h1{
+        display: flex;
+        margin:30px;
+        color:#4682B4;
+    }
+    .description{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 3px solid black;
+        font-size: x-large;
+        align-items: center;
+        max-width: 300px;
+        
+    }
+    .button{
+        border: #15A689 2px solid;
+        margin: 50px;
+        background-color:#40E0D0 ;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 15px;
+        max-width: fit-content;
+    }.button:hover{
+        color:#722F37;
+       transform: scale(1.1,1.3);
+    }
+</style>
+    
+</head>
+<body>
+    <button class="back"> <a href="/overview"> <i class="fa fa-backward" aria-hidden="true"></i> Back</a></button>
+    <h1>{%productname%}</h1>
+    <div class="{%organic%}">
+        <h5> Organic</h5>
+    </div>
+    <div class="description">
+        <label for="" >{%from%}</label>
+        <label for="">{%nuterinet%}</label>
+        <label for="">{%quantity%}</label>
+        <label for=""> {%price%}</label>
+        
+    </div>
+    <div class="button">
+        <label for="">Add to shopping card ({%price%})</label>
+    </div>
+</body>
+</html>
